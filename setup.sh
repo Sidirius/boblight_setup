@@ -4,7 +4,7 @@ apt-get update
 apt-get install -y gcc g++ make subversion
 mv * /tmp/setup_boblight/
 cd ..
-rm -rf setup_boblight/
+rm -rf boblight_setup/
 mv /etc/boblight.conf /etc/boblight.conf_$_now.bak
 cp /tmp/setup_boblight/boblight.conf /etc/boblight.conf
 chmod 775 /tmp/setup_boblight/create_boblight_cron.sh
