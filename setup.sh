@@ -11,7 +11,8 @@ chmod 775 /tmp/setup_boblight/create_boblight_cron.sh
 /tmp/setup_boblight/create_boblight_cron.sh
 cd ~
 svn checkout http://boblight.googlecode.com/svn/trunk/ ~/boblight_source
-cd boblight_source/
+cd ~/boblight_source/
 ./configure --without-portaudio --without-x11 --without-libusb
 make; make install
+rm -rf ~/boblight_source/
 ldconfig
